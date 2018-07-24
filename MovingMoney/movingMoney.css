@@ -1,0 +1,22 @@
+p {
+    font-family: verdana;
+    font-size: 20px;
+    border: 1px solid rgb(50, 50, 177);
+    padding: 20px;
+    background: rgba(192,192,192,.8);
+    color: rgb(0,0,0);
+    margin-left: 400px;
+    margin-right: 200px;
+}
+
+body {
+    background-image: url(img/Blue.PNG);
+    background-repeat: inherit;
+}
+
+img{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
