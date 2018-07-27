@@ -1,22 +1,49 @@
-p {
-    font-family: verdana;
-    font-size: 20px;
-    border: 1px solid rgb(50, 50, 177);
-    padding: 20px;
-    background: rgba(192,192,192,.8);
-    color: rgb(0,0,0);
-    margin-left: 400px;
+.text-field{
+    background-color: rgba(230, 246, 252, 0.904);
+    margin-left: 200px;
     margin-right: 200px;
+    padding: 50px;
+    width: 70%;
 }
 
-body {
-    background-image: url(img/Blue.PNG);
-    background-repeat: inherit;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-image: url(img/background.jpg);
 }
 
-img{
-    margin-left: 60px;
-    margin-right: 60px;
+.icons{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+    height: 20%;
+    background-color: rgba(13, 35, 228, 0.904);
 }
 
+.containers{
+  border-radius: 50%;
+}
+
+
+
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: rgb(231, 219, 219);
+}
+
+li{
+  display: inline-block;
+  padding: 10px;
+  float: right;
+}
+
+nav{
+  background-color: cornflowerblue;
+  height: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
 
