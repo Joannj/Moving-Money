@@ -12,127 +12,235 @@
 
     </head>
     <body class="container-fluid">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
-        <div>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.facebook.com">
-                            <img src="img/facebook.ico" width="30px" height="30px"> </a> </li>
-                        <li><a href="https://twitter.com">
-                            <img src="img/twitter.png" width="30px" height="30px"> </a> </li>
-                        <li><a href="https://www.instagram.com">
-                            <img src="img/instagram.png"width="30px" height="30px"> </a></li>
-                    </ul>
-                </nav>
-            </div>
-        <div class="text-field">
-            <img src="img/roundIcon.png" alt="Moving Mony Logo" width="300px" height="150px">
-                <form>
-                    <h2>How much could you be saving?</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Do you eat out more than once a week?  
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+            <script>
+                function yes01() {
+                    document.getElementById("root1").innerHTML = "Well done! You're saving R8";
+                }
+                function no01() {
+                    document.getElementById("root1").innerHTML = "You could be saving R8";
+                }
+                function yes02() {
+                    document.getElementById("root2").innerHTML = "Not cool.. you're wasting R30 ";
+                }
+                function no02() {
+                    document.getElementById("root2").innerHTML = "Thats the way to save R30 bucks";
+                }
+                function yes03() {
+                    document.getElementById("root3").innerHTML = "Way To Go! Keep saving R30";
+                }
+                function no03() {
+                    document.getElementById("root3").innerHTML = "Start Braai'ing and score R30";
+                }
+                function yes04() {
+                    document.getElementById("root4").innerHTML = "You're paying for two instead one one. Start saving R40";
+                }
+                function no04() {
+                    document.getElementById("root4").innerHTML = "Way To Go! You know the value of saving R40";
+                }
+                function yes05() {
+                    document.getElementById("root5").innerHTML = "Two Thumbs Up! That R70 coming in handy?";
+                }
+                function no05() {
+                    document.getElementById("root5").innerHTML = "You're missing out on R70";
+                }
+                function yes06() {
+                    document.getElementById("root6").innerHTML = "You've Got It! R100 towards your Life goal";
+                }
+                function no06() {
+                    document.getElementById("root6").innerHTML = "Start saving R100 to buy your own coffee machine";
+                }
+                function yes07() {
+                    document.getElementById("root7").innerHTML = "Bravo! R12 Lining your pockets.";
+                }
+                function no07() {
+                    document.getElementById("root7").innerHTML = "Cut that electricity costs by R12";
+                }
+                function yes08() {
+                    document.getElementById("root8").innerHTML = "Unbelievable Work-OUT! R150 extra on you saving budget.";
+                }
+                function no08() {
+                    document.getElementById("root8").innerHTML = "Use that weights around you and save R150 ";
+                }
+                function yes09() {
+                    document.getElementById("root9").innerHTML = "Amazing Effort! That small difference is worth your R5";
+                }
+                function no09() {
+                    document.getElementById("root9").innerHTML = "Drop that name brands start saving that R5";
+                }
+                function yes10() {
+                    document.getElementById("root10").innerHTML = "Exceptional! R400 fills a big gap";
+                }
+                function no10() {
+                    document.getElementById("root10").innerHTML = "Start saving up to R400";
+                }
+            </script>
+            <div>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.facebook.com">
+                                <img src="img/facebook.ico" width="30px" height="30px"> </a> </li>
+                            <li><a href="https://twitter.com">
+                                <img src="img/twitter.png" width="30px" height="30px"> </a> </li>
+                            <li><a href="https://www.instagram.com">
+                                <img src="img/instagram.png"width="30px" height="30px"> </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            <div class="text-field">
+                <img src="img/roundIcon.png" alt="Moving Mony Logo" width="300px" height="150px">
+                    <form>
+                        <h2>How much could you be saving?</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                Are you watch matinee movie shows?    
+                            </div>
+                            <div class="col-md-1">
+                                    <fieldset id="one">
+                                        <input type="radio" name="one" onclick=yes01()> 
+                                        <input type="radio" name="one" onclick=no01()>
+                                    </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root1"></p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
+                        <div class="row">
+                            <div class="col-md-6">
+                                Do you eat out more than once a week?  
+                            </div>
+                            <div class="col-md-1">
+                                <fieldset id="two">
+                                    <input type="radio" name="two" onclick=yes02()> 
+                                    <input type="radio" name="two" onclick=no02()>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root2"></p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
                                 Are you cooking with fire instead of electricity?  
+                            </div>
+                            <div class="col-md-1">
+                                <fieldset id="three">
+                                    <input type="radio" name="three" onclick=yes03()> 
+                                    <input type="radio" name="three" onclick=no03()>
+                                </fieldset>
+                            </div>
+                                <div class="col-md-5">
+                                    <p id="root3"></p>
+                                </div>
                         </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
-                        </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
                                 Do you socialize at the local pub?  
+                            </div>
+                            <div class="col-md-1">
+                                    <fieldset id="four">
+                                        <input type="radio" name="four" onclick=yes04()> 
+                                        <input type="radio" name="four" onclick=no04()>
+                                    </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root4"></p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
+                        <div class="row">
+                            <div class="col-md-6">
+                                Are you currently buying your Groceries in bulk?  
+                            </div>
+                            <div class="col-md-1">
+                                    <fieldset id="five">
+                                        <input type="radio" name="five" onclick=yes05()> 
+                                        <input type="radio" name="five" onclick=no05()>
+                                    </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root5"></p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-
+                        <div class="row">
+                            <div class="col-md-6">
+                                Do you make your coffee at home?  
+                            </div>
+                            <div class="col-md-1">
+                                <fieldset id="six">
+                                    <input type="radio" name="six" onclick=yes06()> 
+                                    <input type="radio" name="six" onclick=no06()>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root6"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Are you currently buying your Groceries in bulk?  
+                        <div class="row">
+                            <div class="col-md-6">
+                                Do you switch off your Tv And stove when its not in use?  
+                            </div>
+                            <div class="col-md-1">
+                                <fieldset id="seven">
+                                    <input type="radio" name="seven" onclick=yes07()> 
+                                    <input type="radio" name="seven" onclick=no07()>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root7"></p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
+                        <div class="row">
+                            <div class="col-md-6">
+                                    Are you using your local park or back yard to gym?  
+                            </div>
+                            <div class="col-md-1">
+                                <fieldset id="eight">
+                                    <input type="radio" name="eight" onclick=yes08()> 
+                                    <input type="radio" name="eight" onclick=no08()>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root8"></p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Do you make your coffee at home?  
-                        </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
-                        </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Do you switch off your Tv And stove when its not in use?  
-                        </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
-                        </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Are you using your local park or back yard to gym?  
-                        </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
-                        </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Do yo use generic brands? (no name) or (Gen-Pyne)  
-                        </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
-                        </div>
-                        <div class="col-md-4">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            Are you carpooling or travelling by public transport?  
-                        </div>
-                        <div class="col-md-2">
-                            <input type="radio" name="yes-no"> <input type="radio" name="yes-no">
-                        </div>
-                        <div class="col-md-4">
-                        </div>
-                    </div><br>
-                    <br> <button>CALCULATE MY SAVINGS</button><br>
-                    <br><h4><b>You could you Saving R xxx </b></h4><br>
-                </form>
-        </div><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                    Do yo use generic brands? (no name) or (Gen-Pyne)  
+                            </div>
+                            <div class="col-md-1">
+                                <fieldset id="nine">
+                                    <input type="radio" name="nine" onclick=yes09()> 
+                                    <input type="radio" name="nine" onclick=no09()>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                                <p id="root9"></p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                                <div class="col-md-6">
+                                    Are you carpooling or travelling by public transport?  
+                                </div>
+                                <div class="col-md-1">
+                                    <fieldset id="ten">
+                                        <input type="radio" name="ten" onclick=yes10()> 
+                                        <input type="radio" name="ten" onclick=no10()>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-5">
+                                    <p id="root10"></p>
+                                </div>
+                            </div>
+                        <br>
+                        <br> <button>CALCULATE MY SAVINGS</button><br>
+                        <br><h4><b>You could you Saving R xxx </b></h4><br>
+                    </form>
+            </div><br>
     
         <div class="row icons">
             <div class="col-md-2 container">
